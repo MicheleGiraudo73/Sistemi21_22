@@ -1,13 +1,13 @@
 import string
-from typing import ChainMap
 
-alphabet = string.ascii_lowercase
+
+alfabeto = string.ascii_lowercase
 
 def rotate(parola,chiave):
     rot = ""
     for t in parola:
-        if t in alphabet:
-            rot += alphabet[alphabet.index(t)+chiave-26]
+        if t in alfabeto:
+            rot += alfABETO[alFABETO.index(t)+chiave-26]
         else:
             rot += t
     return rot
